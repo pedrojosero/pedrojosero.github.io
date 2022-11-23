@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-image: url('../img/background3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .main-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 90%;
+    max-width: 700px;
+    width: 90%;
+    padding: 25px 30px;
+    flex-direction: column;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+
+  .title {
+    margin: 50px 0 40px 0;
+    color: #c78491 !important;
+    font-size: 55px;
+    font-family: 'Bebas Neue', display;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 20px; 
+    font-family:'Open Sans', sans-serif;
+    text-align: center;
+    margin: 20px;
+
+  }
+
+  .date {
+    font-size: 26px;
+    font-family:'Open Sans', sans-serif;
+    text-align: center;
+    margin: 45px;
+    color: #902c8e;
+    font-weight: 700;
+  }
+
+  .parents {
+    font-family: 'Gentium Book Plus', serif;
+    font-size: 24px;
+  }
+
+  .address {
+    font-size: 22px; 
+    font-family: 'Gentium Book Plus', serif;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .address a{
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .mapa {
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 35px; 
+    font-family: 'Gentium Book Plus', serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 20px;
+    color: #902c8e;
+  }
+
+  .decision{
+    display: flex ;
+    justify-content: center;
+    font-family:'Open Sans', sans-serif;
+    cursor: pointer;
+  }
+
+ 
+  .circulo img{
+    width: 150px;
+    margin: 25px;
+  }
+
+  .circulo img:hover{
+    opacity: 0.5;
+  }
+
+
+  /*======Boy or Girl=====*/
+  .radio-buttons {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .custom-radio input {
+    display: none;
+  }
+
+  .radio-btn {
+    margin: 10px;
+    width: 180px;
+    height: 200px;
+    border: 3px solid transparent;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px #c3c3c367;
+    cursor: pointer;
+  }
+
+  .radio-btn > i {
+    color: #ffffff;
+    background-color: #8373e6;
+    font-size: 20px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) scale(4);
+    border-radius: 50px;
+    padding: 3px;
+    transition: 0.2s;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  .radio-btn .hobbies-icon {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .radio-btn .hobbies-icon img{
+    width: 80px;
+  }
+
+
+  .radio-btn .hobbies-icon i {
+    color: #8373e6;
+    line-height: 80px;
+    font-size: 60px;
+  }
+
+  .radio-btn .hobbies-icon h3 {
+    color: #8373e6;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 25px;
+    text-transform: uppercase;
+  }
+
+  .custom-radio input:checked + .radio-btn {
+    border: 3px solid #8373e6;
+  }
+
+  .custom-radio input:checked + .radio-btn > i {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+
+  .label{
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 500;
+    color: var(--secundario);
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  .label .required {
+  font-family:'Open Sans', sans-serif;
+  font-size: 15px;
+  color: red;
+  }
+
+  h4 {
+    margin: 20px;
+    text-align: center;
+    font-family: 'Gentium Book Plus', serif;
+
+  }
+  .contenedor-input {
+    position: relative;
+  }
+
+  .contenedor-input input {
+    height: 50px;
+	  line-height: 50px;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 0 20px 0 45px;
+    margin-bottom: 20px;
+    background: #f4f8f7;
+    color: var(--primario);
+    font-family: 'Quicksand', sans-serif;
+    border: 2px solid transparent;
+    transition: .3s ease all;
+  }
+  .contenedor-input input:focus{
+      outline: none;
+      border: 2px solid var(--primario);
+  }
+
+  .contenedor-input svg {
+    position: absolute;
+    color: var(--primario);
+    top: 17px;
+    left: 17px;
+  } 
+
+  .botones{
+    text-align: center;
+    margin-top: 20px;
+    
+  }
+  .botones p{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+    margin: 25px;
+    font-size: 20px;
+  }
+
+  .btn-agregar {
+    background: #5a4bbd;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    margin-bottom: 20px;
+    transition: .3s ease all;
+  }
+
+  .btn-agregar:hover {
+    background: #8373e6;
+  }
+
+  #accordion .content {
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+
+  #accordion + input[type="radio"]:checked + .content {
+    max-height: 400px;
+  
+  }
+
+  .registro {
+    display: none;
+  }
+  
+  .registro.activo {
+    display: block;
+  }
+  
+  .exito {
+    display: none;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .exito.activo {
+    display: flex;
+  }
+  
+  .exito svg {
+    width: 50px;
+    height: 50px;
+    color: #2cf178;
+  }
+
+  .gracias-container {
+    position:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    width:30em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+  }
+
+  .gracias h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family: 'Gentium Book Plus', serif;
+    color: #c78491;
+
+  }
+
+  .gracias p{
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+
+  }
+
+  .yes-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
